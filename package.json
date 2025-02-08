@@ -5,12 +5,13 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "prepare": "husky",
-    "lint": "npx eslint docs",
-    "lint:fix": "npm run lint -- --fix",
-    "prettier": "npx prettier docs --check",
-    "prettier:fix": "npm run prettier -- --write",
-    "format": "npm run prettier:fix && npm run lint:fix"
+    "lint:code": "eslint --ignore-path .gitignore --ext .js,.ts src",
+    "lint:code:fix": "npm run lint:code -- --fix",
+    "format:code": "prettier --ignore-path .gitignore --check src",
+    "format:code:fix": "npm run format:code -- --write",
+    "refactor": "npm run format:code:fix && npm run lint:code:fix",
+    "dev": "vite",
+    "build": "vite build"
   },
   "repository": {
     "type": "git",
@@ -32,17 +33,19 @@
   "devDependencies": {
     "@commitlint/cli": "^19.4.0",
     "@d3p1/commitlint-config": "^1.0.1",
-    "husky": "^9.1.4",
-    "prettier": "3.3.3",
     "@eslint/js": "^9.19.0",
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
+    "@vitejs/plugin-react": "^4.3.4",
     "eslint": "^9.19.0",
-    "recommended": "^0.0.7",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.18",
-    "globals": "^15.14.0"
+    "globals": "^15.14.0",
+    "husky": "^9.1.4",
+    "prettier": "3.3.3",
+    "recommended": "^0.0.7",
+    "vite": "^6.1.0"
   }
 }
