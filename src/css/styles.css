@@ -32,3 +32,16 @@ body {
     content: '';
     display: table;
 }
+
+.board__status {
+    margin-bottom: 10px;
+}
+
+.game {
+    display: flex;
+    flex-direction: row;
+}
+
+.game__info {
+    margin-left: 20px;
+}

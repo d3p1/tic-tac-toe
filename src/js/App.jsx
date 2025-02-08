@@ -2,8 +2,9 @@
  * @description App
  * @author      C. M. de Picciotto <d3p1@d3p1.dev> (https://d3p1.dev/)
  */
+import React, {StrictMode} from 'react'
 import {createRoot, Root} from 'react-dom/client'
-import Board from './app/game/Board.jsx'
+import Game from './app/Game.jsx'
 import '../css/styles.css'
 
 export default class App {
@@ -33,6 +34,6 @@ export default class App {
    * @returns {void}
    */
   init() {
-    this.root.render(<Board/>)
+    this.root.render(<StrictMode><Game/></StrictMode>)
   }
 }
