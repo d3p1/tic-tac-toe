@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/d3p1/tic-tac-toe/compare/v1.1.0...v1.2.0) (2025-02-08)
+
+
+### Features
+
+* add game [[#1](https://github.com/d3p1/tic-tac-toe/issues/1)] ([7325d64](https://github.com/d3p1/tic-tac-toe/commit/7325d6448307bd0fcf4a738f0ca52d5212c228de))
+
 # [1.1.0](https://github.com/d3p1/tic-tac-toe/compare/v1.0.0...v1.1.0) (2025-02-08)
 
 
